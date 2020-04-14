@@ -1,8 +1,8 @@
 import React from "react"
 
 
-function recipes(){
+function Recipes(){
 
 } 
 
-export default recipes
+export default Recipes
