@@ -1,25 +1,56 @@
 import React from 'react';
-import logo from './logo.svg';
+import NavMenu from './containers/NavMenu/NavMenu'
 import './App.css';
+
+//Reach Router
+import { Router } from '@reach/router'
+
+//Pages
+
+const HomePage = () => {
+  return (
+    <div>
+      <NavMenu />
+      <p>HOME: This is the home page.</p>
+    </div>
+  )
+}
+
+const AboutPage = () => {
+  return (
+    <div>
+      <NavMenu />
+      <p>ABOUT: This is the about page.</p>
+    </div>
+  )
+}
+
+const WorkoutsPage = () => {
+  return (
+    <div>
+      <NavMenu />
+      <p>WORKOUTS: This is the workouts page.</p>
+    </div>
+  )
+}
+
+const RecipesPage = () => {
+  return (
+    <div>
+      <NavMenu />
+      <p>RECIPES: This is the recipes page.</p>
+    </div>
+  )
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <HomePage path="/" />
+      <AboutPage path="/about" />
+      <WorkoutsPage path="/workouts" />
+      <RecipesPage path="/recipes" />
+    </Router>
   );
 }
 
