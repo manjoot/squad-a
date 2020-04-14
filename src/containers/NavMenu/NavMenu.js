@@ -1,17 +1,22 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
+import Divider from '@material-ui/core/Divider';
+import IconButton from '@material-ui/core/IconButton';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import DraftsIcon from '@material-ui/icons/Drafts';
-import SendIcon from '@material-ui/icons/Send';
+import HomeIcon from '@material-ui/icons/Home';
+import WorkoutIcon from '@material-ui/icons/FitnessCenter';
+import RecipeIcon from '@material-ui/icons/LocalDining';
+import MenuIcon from '@material-ui/icons/Menu';
+import InfoIcon from '@material-ui/icons/Info';
+
 
 const StyledMenu = withStyles({
   paper: {
     border: '1px solid #d3d4d5',
+    width: '275px',
   },
 })((props) => (
   <Menu
@@ -32,13 +37,23 @@ const StyledMenu = withStyles({
 const StyledMenuItem = withStyles((theme) => ({
   root: {
     '&:focus': {
-      backgroundColor: theme.palette.primary.main,
+      backgroundColor: 'rgba(20, 20, 20, 0.5)',
       '& .MuiListItemIcon-root, & .MuiListItemText-primary': {
         color: theme.palette.common.white,
       },
+      color: 'black',
     },
   },
 }))(MenuItem);
+
+const StyledButton = withStyles({
+    root: {
+      color: 'black',
+    },
+    label: {
+      textTransform: 'capitalize',
+    },
+  })(IconButton);
 
 export default function NavMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -53,15 +68,15 @@ export default function NavMenu() {
 
   return (
     <div>
-      <Button
+      <StyledButton
         aria-controls="customized-menu"
         aria-haspopup="true"
         variant="contained"
         color="primary"
         onClick={handleClick}
       >
-        Open Menu
-      </Button>
+        <MenuIcon fontSize="inherit" />
+      </StyledButton>
       <StyledMenu
         id="customized-menu"
         anchorEl={anchorEl}
@@ -71,21 +86,32 @@ export default function NavMenu() {
       >
         <StyledMenuItem>
           <ListItemIcon>
-            <SendIcon fontSize="small" />
+            <HomeIcon fontSize="small" />
           </ListItemIcon>
-          <ListItemText primary="Sent mail" />
+          <ListItemText primary="Home" />
+        </StyledMenuItem>
+
+        <StyledMenuItem>
+        <ListItemIcon>
+            <InfoIcon fontSize="small" />
+        </ListItemIcon>
+        <ListItemText primary="About" />
+        </StyledMenuItem>
+
+        <Divider />
+
+    
+        <StyledMenuItem>
+          <ListItemIcon>
+            <WorkoutIcon fontSize="small" />
+          </ListItemIcon>
+          <ListItemText primary="Workout" />
         </StyledMenuItem>
         <StyledMenuItem>
           <ListItemIcon>
-            <DraftsIcon fontSize="small" />
+            <RecipeIcon fontSize="small" />
           </ListItemIcon>
-          <ListItemText primary="Drafts" />
-        </StyledMenuItem>
-        <StyledMenuItem>
-          <ListItemIcon>
-            <InboxIcon fontSize="small" />
-          </ListItemIcon>
-          <ListItemText primary="Inbox" />
+          <ListItemText primary="Recipe" />
         </StyledMenuItem>
       </StyledMenu>
     </div>
