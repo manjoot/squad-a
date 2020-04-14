@@ -131,7 +131,7 @@ export default function NavMenu() {
         {/* Workout */}
 
         <Link 
-        to="/workout"
+        to="/workouts"
         style={{ textDecoration: 'none', color: 'black' }}
         >
           <StyledMenuItem>
@@ -146,7 +146,7 @@ export default function NavMenu() {
         {/* Recipe */}
 
         <Link 
-        to="/recipe"
+        to="/recipes"
         style={{ textDecoration: 'none', color: 'black' }}
         >
           <StyledMenuItem>
