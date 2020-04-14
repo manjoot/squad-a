@@ -1,4 +1,11 @@
 import React from 'react';
+
+//Reach Router Calls
+import { Link } from '@reach/router'
+
+
+
+//Material UI Calls
 import { withStyles } from '@material-ui/core/styles';
 import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
@@ -12,7 +19,7 @@ import RecipeIcon from '@material-ui/icons/LocalDining';
 import MenuIcon from '@material-ui/icons/Menu';
 import InfoIcon from '@material-ui/icons/Info';
 
-
+//Material UI styles for Navbar
 const StyledMenu = withStyles({
   paper: {
     border: '1px solid #d3d4d5',
@@ -66,8 +73,12 @@ export default function NavMenu() {
     setAnchorEl(null);
   };
 
+  //Return Statement
+
   return (
     <div>
+
+      {/* Button for opening Menu */}
       <StyledButton
         aria-controls="customized-menu"
         aria-haspopup="true"
@@ -84,35 +95,68 @@ export default function NavMenu() {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <StyledMenuItem>
-          <ListItemIcon>
-            <HomeIcon fontSize="small" />
-          </ListItemIcon>
-          <ListItemText primary="Home" />
-        </StyledMenuItem>
 
-        <StyledMenuItem>
-        <ListItemIcon>
-            <InfoIcon fontSize="small" />
-        </ListItemIcon>
-        <ListItemText primary="About" />
-        </StyledMenuItem>
+        {/* Home */}
+
+        <Link 
+        to="/"
+        style={{ textDecoration: 'none', color: 'black' }}
+        >
+          <StyledMenuItem>
+            <ListItemIcon>
+              <HomeIcon fontSize="small" />
+            </ListItemIcon>
+            <ListItemText primary="Home" />
+          </StyledMenuItem>  
+        </Link>          
+          
+
+        {/* About */}
+
+        <Link 
+        to="/about"
+        style={{ textDecoration: 'none', color: 'black' }}
+        >
+          <StyledMenuItem>
+            <ListItemIcon>
+              <InfoIcon fontSize="small" />
+            </ListItemIcon>
+            <ListItemText primary="About" />
+          </StyledMenuItem>  
+        </Link>          
+          
 
         <Divider />
 
-    
-        <StyledMenuItem>
-          <ListItemIcon>
-            <WorkoutIcon fontSize="small" />
-          </ListItemIcon>
-          <ListItemText primary="Workout" />
-        </StyledMenuItem>
-        <StyledMenuItem>
-          <ListItemIcon>
-            <RecipeIcon fontSize="small" />
-          </ListItemIcon>
-          <ListItemText primary="Recipe" />
-        </StyledMenuItem>
+        {/* Workout */}
+
+        <Link 
+        to="/workout"
+        style={{ textDecoration: 'none', color: 'black' }}
+        >
+          <StyledMenuItem>
+            <ListItemIcon>
+              <WorkoutIcon fontSize="small" />
+            </ListItemIcon>
+            <ListItemText primary="Workout" />
+          </StyledMenuItem>  
+        </Link>          
+          
+
+        {/* Recipe */}
+
+        <Link 
+        to="/recipe"
+        style={{ textDecoration: 'none', color: 'black' }}
+        >
+          <StyledMenuItem>
+            <ListItemIcon>
+              <RecipeIcon fontSize="small" />
+            </ListItemIcon>
+            <ListItemText primary="Recipe" />
+          </StyledMenuItem>  
+        </Link>   
+
       </StyledMenu>
     </div>
   );
