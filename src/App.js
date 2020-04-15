@@ -13,9 +13,9 @@ const HomePage = () => {
       <NavMenu />
 
       <div className="content-section welcome">
-        <h1 style={{textAlign:"center", marginBottom: '1em'}}>
-          Homepage!
-        </h1>
+        <div className="header">
+          <img src="https://files.slack.com/files-pri/TCX5TJ8DD-F0124RKC5Q9/nourish___lift-5.png" alt="cool" />
+        </div>
       </div>
 
       <div className="content-section workout">
