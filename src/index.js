@@ -7,7 +7,7 @@ import Recipes from './components/Recipes/Recipes';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Recipes/>
+    <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );
