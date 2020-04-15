@@ -1,6 +1,8 @@
 import React from 'react';
 import NavMenu from './containers/NavMenu/NavMenu'
 import RecipesAPI from './components/Recipes/RecipesAPI'
+import WorkoutCard from './components/Workout Page/Cards'
+import CardGrid from './components/Workout Page/cardsection'
 import './App.css';
 
 //Reach Router
@@ -72,6 +74,7 @@ const WorkoutsPage = () => {
     <div>
       <NavMenu />
       <p>WORKOUTS: This is the workouts page.</p>
+      <CardGrid />
     </div>
   )
 }
