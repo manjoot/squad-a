@@ -11,8 +11,6 @@ function RecipesAPI(props){
 
     React.useEffect(() => {
         axios.get(`https://www.themealdb.com/api/json/v1/1/random.php`).then(response => {
-            console.log(response.data.meals[0].idMeal)
-            console.log(response.data.meals[0].strMeal)
             setMealID(response.data.meals[0].idMeal)
             setMealName(response.data.meals[0].strMeal)
         })
@@ -21,8 +19,6 @@ function RecipesAPI(props){
     React.useEffect(() => {
         if(mealID){
         axios.get(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealID}`).then(response => {
-            console.log(response.data.meals[0].strInstructions)
-            console.log(response.data.meals[0].idMeal)
             setInstructions(response.data.meals[0].strInstructions)
 
         })}
@@ -30,9 +26,7 @@ function RecipesAPI(props){
 
     React.useEffect(() => { 
         if (mealID){
-        axios.get(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealID}`).then(response => {
-            console.log(response.data.meals[0].strMealThumb)
-            console.log(response.data.meals[0].idMeal)    
+        axios.get(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealID}`).then(response => {  
             setMealThumb(response.data.meals[0].strMealThumb)
         })}
     }, [mealID])

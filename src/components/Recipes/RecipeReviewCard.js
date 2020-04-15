@@ -34,9 +34,6 @@ const useStyles = makeStyles((theme) => ({
   expandOpen: {
     transform: 'rotate(180deg)',
   },
-  avatar: {
-    backgroundColor: red[500],
-  },
 }));
 
 export default function RecipeReviewCard(props) {
@@ -50,11 +47,6 @@ export default function RecipeReviewCard(props) {
   return (
     <Card className={classes.root}>
       <CardHeader
-        avatar={
-          <Avatar aria-label="recipe" className={classes.avatar}>
-            R
-          </Avatar>
-        }
         action={
           <IconButton aria-label="settings">
             <MoreVertIcon />
@@ -96,15 +88,6 @@ export default function RecipeReviewCard(props) {
           <Typography paragraph>Method:</Typography>
           <Typography paragraph>
             {props.method}
-          </Typography>
-          <Typography paragraph>
-           
-          </Typography>
-          <Typography paragraph>
-            
-          </Typography>
-          <Typography>
-            
           </Typography>
         </CardContent>
       </Collapse>
