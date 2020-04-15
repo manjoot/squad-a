@@ -9,9 +9,29 @@ import { Router } from '@reach/router'
 
 const HomePage = () => {
   return (
-    <div>
+    <div className="content">
       <NavMenu />
-      <p>HOME: This is the home page.</p>
+
+      <div className="content-section welcome">
+        <h1 style={{textAlign:"center", marginBottom: '1em'}}>
+          Homepage!
+        </h1>
+      </div>
+
+      <div className="content-section workout">
+        <h1 style={{textAlign:"center", marginBottom: '1em'}}>
+          Workout!
+        </h1>
+        <p>Workout Seciton</p>
+      </div>
+
+      <div className="content-section recipe">
+        <h1 style={{textAlign:"center", marginBottom: '1em'}}>
+          Recipe
+        </h1>
+        <p> blablalblabdsldsjdkdggdjsgsdkjlgsljfsdjlkg</p>
+      </div>
+
     </div>
   )
 }
