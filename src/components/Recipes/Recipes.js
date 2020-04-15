@@ -5,6 +5,7 @@ function Recipes(){
     return(
         <div>
             <RecipesAPI></RecipesAPI>
+            <RecipesAPI></RecipesAPI>
         </div>
     )
 }
