@@ -1,5 +1,6 @@
 import React from 'react';
 import NavMenu from './containers/NavMenu/NavMenu'
+import RecipesAPI from './components/Recipes/RecipesAPI'
 import './App.css';
 
 //Reach Router
@@ -45,6 +46,12 @@ const HomePage = () => {
             </Grid>
           </Grid>
         </div>
+      </div>
+
+      <div className="content-section">
+        <RecipesAPI />
+        <RecipesAPI />
+        <RecipesAPI />
       </div>
 
     </div>
