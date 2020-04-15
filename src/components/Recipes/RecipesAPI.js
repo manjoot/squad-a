@@ -1,8 +1,9 @@
 import React from "react"
 
 
-function Recipes(){
-
+function RecipesAPI(){
+    return(
+        <div></div>
+    )
 } 
-
-export default Recipes
+export default RecipesAPI
