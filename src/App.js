@@ -5,13 +5,48 @@ import './App.css';
 //Reach Router
 import { Router } from '@reach/router'
 
+//Material UI Grid for Two Images
+import { makeStyles } from '@material-ui/core/styles';
+import Paper from '@material-ui/core/Paper';
+import Grid from '@material-ui/core/Grid';
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+  },
+  paper: {
+    padding: theme.spacing(2),
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+  },
+}));
+
 //Pages
 
 const HomePage = () => {
+  const classes = useStyles(); //Material UI grid style declaration
   return (
-    <div>
+    <div className="content">
       <NavMenu />
-      <p>HOME: This is the home page.</p>
+      <div className="content-section welcome">
+        <div className="header">
+          <img src="https://files.slack.com/files-pri/TCX5TJ8DD-F0124RKC5Q9/nourish___lift-5.png" alt="cool" />
+        </div>
+      </div>
+
+      <div className="content-section">
+        <div className={classes.root}>
+          <Grid container spacing={3}>
+            <Grid item xs={6}>
+            <img className="image img1" src="https://files.slack.com/files-pri/TCX5TJ8DD-F011LSZ57CN/pull_up_-_happily_grey.jpg" alt="cool" />
+            </Grid>
+            <Grid item xs={6}>
+            <img className="image img2" src="https://files.slack.com/files-pri/TCX5TJ8DD-F0124SN7VK3/sesame-noodles-ingredients.jpg" alt="cool" />
+            </Grid>
+          </Grid>
+        </div>
+      </div>
+
     </div>
   )
 }
