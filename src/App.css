@@ -13,8 +13,13 @@
   height: 600px;
   margin-top: -200px;
   padding-left: 150px;
+  transition: transform 0.5s;
 }
 
+.image:hover {
+  transform: scale(1.01);
+  cursor: pointer;
+}
 .img1 {
   padding-right: 100px;
 

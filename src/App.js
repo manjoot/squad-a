@@ -62,8 +62,13 @@ const HomePage = () => {
 
 const AboutPage = () => {
   return (
-    <div>
+    <div className="content">
       <NavMenu />
+      <div className="content-section welcome">
+        <div className="header">
+          <img src="https://files.slack.com/files-pri/TCX5TJ8DD-F0124RKC5Q9/nourish___lift-5.png" alt="cool" />
+        </div>
+      </div>
       <p>ABOUT: This is the about page.</p>
     </div>
   )
@@ -71,8 +76,13 @@ const AboutPage = () => {
 
 const WorkoutsPage = () => {
   return (
-    <div>
+    <div className="content">
       <NavMenu />
+      <div className="content-section welcome">
+        <div className="header">
+          <img src="https://files.slack.com/files-pri/TCX5TJ8DD-F0124RKC5Q9/nourish___lift-5.png" alt="cool" />
+        </div>
+      </div>
       <p>WORKOUTS: This is the workouts page.</p>
       <CardGrid />
     </div>
@@ -81,8 +91,14 @@ const WorkoutsPage = () => {
 
 const RecipesPage = () => {
   return (
-    <div>
+    <div className="content">
       <NavMenu />
+      <div className="content-section welcome">
+        <div className="header">
+          <img src="https://files.slack.com/files-pri/TCX5TJ8DD-F0124RKC5Q9/nourish___lift-5.png" alt="cool" />
+        </div>
+      </div>
+      <RecipesAPI />
       <p>RECIPES: This is the recipes page.</p>
     </div>
   )
