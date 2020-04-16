@@ -27,7 +27,11 @@ function ExerciseAPI(props){
     React.useEffect(() => {
         axios.get(`https://wger.de/api/v2/exerciseinfo/${exerciseID}/`).then(response =>{
             console.log(response.data.description)
-            setExerciseDescription(response.data.description)
+            const test = response.data.description.replace("<p>", "")
+            console.log(test)
+            // test.replace("<p>", "")
+            // test.replace("</p>", "")
+            setExerciseDescription(test)
         })
     }, [])
 
@@ -44,8 +48,6 @@ function ExerciseAPI(props){
         nameOfExercise={exerciseName}
         exerciseCat={exerciseCategory}
         exerciseThum={exerciseImage}
-        titleOfExercise=""
-        shortDescription=""
         longDescription={exerciseDescription}
         >
 
