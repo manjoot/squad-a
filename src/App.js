@@ -20,6 +20,7 @@ import Grid from '@material-ui/core/Grid';
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    paddingLeft: '150px'
   },
   paper: {
     padding: theme.spacing(2),
@@ -44,10 +45,10 @@ const HomePage = () => {
       <div className="content-section">
         <div className={classes.root}>
           <Grid container spacing={3}>
-            <Grid item xs={6}>
+            <Grid item xs={4}>
             <img className="image img1" src={WorkoutImage} alt="Workouts" />
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={4}>
             <img className="image img2" src={RecipeImage} alt="Recipes" />
             </Grid>
           </Grid>
