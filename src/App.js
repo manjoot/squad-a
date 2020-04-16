@@ -11,6 +11,7 @@ import RecipeImage from './assets/images/recipe.jpg'
 
 //Reach Router
 import { Router } from '@reach/router'
+import { Link } from '@reach/router'
 
 //Material UI Grid for Two Images
 import { makeStyles } from '@material-ui/core/styles';
@@ -33,6 +34,16 @@ const useStyles = makeStyles((theme) => ({
 
 const HomePage = () => {
   const classes = useStyles(); //Material UI grid style declaration
+
+  // Handles for Image Clicks
+  // const handleClickWorkout = () => {
+  //   return (
+      
+
+  //   );
+
+
+  // }
   return (
     <div className="content">
       <NavMenu />
@@ -46,10 +57,34 @@ const HomePage = () => {
         <div className={classes.root}>
           <Grid container spacing={3}>
             <Grid item xs={4}>
-            <img className="image img1" src={WorkoutImage} alt="Workouts" />
+
+            {/* Workout Image */}
+
+            <Link 
+              to="/workouts"
+            >
+              <img 
+              className="image img1" 
+              src={WorkoutImage} 
+              alt="Workouts"
+              />
+            </Link>
+            
             </Grid>
             <Grid item xs={4}>
-            <img className="image img2" src={RecipeImage} alt="Recipes" />
+
+            {/* Recipe Image */}
+
+            <Link 
+              to="/recipes"
+            >
+              <img 
+              className="image img1" 
+              src={RecipeImage} 
+              alt="Workouts"
+              />
+            </Link>
+
             </Grid>
           </Grid>
         </div>
