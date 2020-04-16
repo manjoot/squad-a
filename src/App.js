@@ -54,10 +54,10 @@ const HomePage = () => {
         </div>
       </div>
 
+      {/* Social Media Idea Section (Placeholder) */}
+
       <div className="content-section">
-        <RecipesAPI />
-        <RecipesAPI />
-        <RecipesAPI />
+        <h1 styles={{textAlign: 'center'}}>Section For Imah's idea</h1>
       </div>
 
     </div>
