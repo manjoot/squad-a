@@ -1,9 +1,13 @@
 import React from 'react';
 import NavMenu from './containers/NavMenu/NavMenu'
 import RecipesAPI from './components/Recipes/RecipesAPI'
-import WorkoutCard from './components/Workout Page/Cards'
 import CardGrid from './components/Workout Page/cardsection'
 import './App.css';
+
+//Local Images
+import Logo from './assets/logos/logo_white_bg.png'
+import WorkoutImage from './assets/images/workout.jpg'
+import RecipeImage from './assets/images/recipe.jpg'
 
 //Reach Router
 import { Router } from '@reach/router'
@@ -33,7 +37,7 @@ const HomePage = () => {
       <NavMenu />
       <div className="content-section welcome">
         <div className="header">
-          <img src="https://files.slack.com/files-pri/TCX5TJ8DD-F0124RKC5Q9/nourish___lift-5.png" alt="cool" />
+          <img src={Logo} alt="cool" />
         </div>
       </div>
 
@@ -41,10 +45,10 @@ const HomePage = () => {
         <div className={classes.root}>
           <Grid container spacing={3}>
             <Grid item xs={6}>
-            <img className="image img1" src="https://files.slack.com/files-pri/TCX5TJ8DD-F011LSZ57CN/pull_up_-_happily_grey.jpg" alt="cool" />
+            <img className="image img1" src={WorkoutImage} alt="Workouts" />
             </Grid>
             <Grid item xs={6}>
-            <img className="image img2" src="https://files.slack.com/files-pri/TCX5TJ8DD-F0124SN7VK3/sesame-noodles-ingredients.jpg" alt="cool" />
+            <img className="image img2" src={RecipeImage} alt="Recipes" />
             </Grid>
           </Grid>
         </div>
