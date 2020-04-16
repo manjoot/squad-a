@@ -1,8 +1,8 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import WorkoutCard from './Cards'
+import ExerciseAPI from './ExerciseAPI';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -22,31 +22,9 @@ export default function CardGrid(props) {
     <div className={classes.root}>
       <Grid container spacing={3}>
         <Grid item xs={12} sm={4}>
-            <WorkoutCard 
-            nameOfExercise="Love Handle Shredder"
-            dateOfPublishing="09.03.2020"
-            titleOfExercise="Back"
-            shortDescription="Get rid of those stubborn love handles with 8 simple exercises."
-            longDescription=
-            
-            {<ol>
-            
-            <li>One Side Leg Raises (3 sets, 15 seconds per side)</li>
-            
-            <li>Bench Leg Raises (3 sets, 30 seconds)</li>
-            
-            <li>Ab Bikes (3 sets, 10 seconds)</li>
-            
-            <li>Glute Bridge (3 sets, 30 seconds)</li>
-            
-            <li>Plank (3 sets, 30 seconds)</li>
-            
-            <li>Plank Rotations (3 sets, 30 seconds per side)</li>
-            
-            <li>Crunches (3 sets, 15 seconds)</li>
-            
-            <li>Flutter Kicks (3 sets, 15 seconds)</li>
-            </ol>}></WorkoutCard>
+            <ExerciseAPI
+              exID={74}
+            ></ExerciseAPI>
         </Grid>
         <Grid item xs={12} sm={4}>
             <WorkoutCard 
