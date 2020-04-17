@@ -39,16 +39,7 @@ const useStyles = makeStyles((theme) => ({
 
 const HomePage = () => {
   const classes = useStyles(); //Material UI grid style declaration
-
-  // Handles for Image Clicks
-  // const handleClickWorkout = () => {
-  //   return (
-      
-
-  //   );
-
-
-  // }
+  
   return (
     <div className="content">
       <NavMenu />
