@@ -12,32 +12,27 @@ function ExerciseAPI(props){
 
     React.useEffect(() => {
         axios.get(`https://wger.de/api/v2/exerciseinfo/${exerciseID}/`).then(response => {
-            console.log(response.data.name)
             setExerciseName(response.data.name)
         })
     }, [])
 
     React.useEffect(() => {
         axios.get(`https://wger.de/api/v2/exerciseinfo/${exerciseID}/`).then(response => {
-            console.log(response.data.category.name)
             setExerciseCategory(response.data.category.name)
         })
     }, [])
 
     React.useEffect(() => {
         axios.get(`https://wger.de/api/v2/exerciseinfo/${exerciseID}/`).then(response =>{
-            console.log(response.data.description)
-            const test = response.data.description.replace("<p>", "")
-            console.log(test)
-            // test.replace("<p>", "")
-            // test.replace("</p>", "")
-            setExerciseDescription(test)
+            var exDescription = response.data.description
+            const regex = /<p>|<\/p>/gi;
+            exDescription = exDescription.replace(regex, '')
+            setExerciseDescription(exDescription)
         })
     }, [])
 
     React.useEffect(() => {
         axios.get(`https://wger.de/api/v2/exerciseimage/?exercise=${exerciseID}`).then(response => {
-            console.log(response.data.image)
             setExerciseImage(response.data.results[0].image)
         })
     }, [])
