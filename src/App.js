@@ -83,7 +83,7 @@ const HomePage = () => {
             {/* Recipe Image */}
 
             <Link 
-              to="/recipes"
+              to="/recipes-section"
             >
               <img 
               className="image img1" 
@@ -173,7 +173,7 @@ function App() {
       <HomePage path="/" />
       <AboutPage path="/about" />
       <WorkoutsPage path="/workouts" />
-      <RecipesPage path="/recipes" />
+      <RecipesPage path="/recipes-section" />
     </Router>
   );
 }
