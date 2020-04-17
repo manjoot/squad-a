@@ -3,6 +3,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import WorkoutCard from '../Workout Page/Cards'
 import Paper from '@material-ui/core/Paper';
+import RecipesDay from './RecipeDay';
+import RecipesAPI from './RecipesAPI'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -15,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
     },
   }));
 
-  export default function CardGrid() {
+  export default function CardGrid(props) {
     const classes = useStyles();
 
     return (
@@ -23,91 +25,15 @@ const useStyles = makeStyles((theme) => ({
 
              <Grid container spacinng={3}>
             <Grid item xs={12} sm={4}>
-
-            <WorkoutCard 
-          nameOfExercise="Minestrone Soup"
-          dateOfPublishing="Diet assists in eliminating 'Love Handles'"
-          shortDescription="This budget minestrone is the classic Italian soup made with cannellini beans and broken up spaghetti."
-          longDescription=
-          
-          {<ul>
-              <li>1 tbsp olive oil</li>
-              
-              <li>1 onion, chopped</li>
-              
-              <li>2 carrots, peeled and chopped</li>
-              
-              <li>3 large celery sticks, chopped</li>
-              
-              <li>2 garlic cloves, finely chopped</li>
-              
-              <li>2 tbsp tomato purée</li>
-              
-              <li>400g tin chopped tomatoes</li>
-              
-              <li>1.2 litres/2 pints vegetable or chicken stock, made from stock cubes</li>
-
-              <li>400g tin cannellini beans, drained and rinsed</li>
-              
-              <li>100g or 3½ of dried spaghetti, broken into short lengths</li>
-              
-              <li>¼ head green cabbage, finely shredded</li>
-              
-              <li>salt and freshly ground black pepper</li>
-         
-         
-         
-          </ul>}>
-
-            </WorkoutCard>
+              <RecipesDay foodID={52772}></RecipesDay>
              </Grid>
 
            <Grid item xs={12} sm={4}>
-          <WorkoutCard 
-          nameOfExercise="Green goddess smoothie bowl"
-          dateOfPublishing="Diet targets Leg/Stomach Fat"
-          shortDescription="Add a splash of colour to your morning with this vibrant breakfast bowl of blended avocado, spinach and nut butter, topped with fresh fruit and seeds"
-          longDescription=
-
-          {<ul>
-              <li>2 Sliced Bananas</li>
-              
-              <li>1 Ripe Avocado, Stoned, Peeled and Chopped into chunks</li>
-              
-              <li>1 Small Ripe Mango,Stoned, Peeled and chopped into chunks</li>
-              
-              <li>100g of Spinach (fresh or frozen)</li>
-
-              <li>250ml of Milk (unsweetened almond or coconut milk works well)</li>
-              
-              <li>1 Tablespoon of unsweetened Almond or Peanut Butter</li>
-              
-              <li>1 Tablespoon of clear Honey, Agave or Maple Syrup (optional)</li>
-              
-              <li>1 Tablespoon of Chia seeds!</li>
-          </ul>}>
-
-          </WorkoutCard>
+          <RecipesAPI></RecipesAPI>
            </Grid>
 
          <Grid item xs={12} sm={4}>
-          <WorkoutCard 
-          nameOfExercise="Pan-fried salmon"
-          dateOfPublishing="Diet targets Mid-Section"
-          shortDescription="Have a perfectly cooked salmon fillet, complete with crisp skin, ready in under 10 minutes."
-          longDescription=
-          
-              {<ul>
-                  <li>2x 150g Salmon Fillets (aboout 4cm thick), with skin on!</li>
-                  
-                  <li>Half a Tablespoon of Olive Oil</li>
-                  
-                  <li>20g of Unsalted Butter</li>
-                  
-                  <li>Half of a sliced Lemon, and make some juice out of it!</li>
-              </ul>}>
-
-            </WorkoutCard>
+          <RecipesAPI></RecipesAPI>
            </Grid>
 
            <Grid item xs={12} sm={4}>
@@ -277,18 +203,8 @@ const useStyles = makeStyles((theme) => ({
               <li>100g cherry tomatoes, halved</li>
               
             </ul>}>
-
- 
             </WorkoutCard>
            </Grid>
-
-
-
-
-
-
-
-
           </Grid>
       </div>
   );
