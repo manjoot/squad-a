@@ -7,6 +7,15 @@ import IconButton from '@material-ui/core/IconButton';
 import StarBorderIcon from '@material-ui/icons/StarBorder';
 
 import picture1 from '../../assets/images/picture1forgallery.jpg';
+import picture2 from '../../assets/images/picture2forgallery.jpg';
+import picture3 from '../../assets/images/picture3forgallery.jpg';
+import picture4 from '../../assets/images/picture4forgallery.jpg';
+import picture5 from '../../assets/images/picture5forgallery.jpg';
+import picture6 from '../../assets/images/picture6forgallery.jpg';
+import picture7 from '../../assets/images/picture7forgallery.jpg';
+import picture8 from '../../assets/images/picture8forgallery.jpg';
+import picture9 from '../../assets/images/picture9forgallery.jpg';
+import picture10 from '../../assets/images/picture10forgallery.jpg';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -34,15 +43,56 @@ const useStyles = makeStyles((theme) => ({
  
 const tileData = [
    {
-     img: picture1,
-     title: 'Gallery Picture 1',
-    author: 'bob',
+    img: picture1,
+    title: 'Gallery Picture 1',
+    author: 'Fit',
    },
    {
-    img: picture1,
+    img: picture2,
     title: 'Gallery Picture 2',
-    author: 'john'  
+    author: 'Food', 
     },
+    {
+    img: picture3,
+    title: 'Gallery Picture 3',
+    author: 'Fit',  
+    },
+    {
+    img: picture4,
+    title: 'Gallery Picture 4',
+    author: 'Food'  
+    },
+    {
+    img: picture5,
+    title: 'Gallery Picture 5',
+    author: 'Fit',  
+    },
+    {
+    img: picture6,
+    title: 'Gallery Picture 6',
+    author: 'Food',  
+    },
+    {
+    img: picture7,
+    title: 'Gallery Picture 7',
+    author: 'Fit',  
+    },
+    {
+    img: picture8,
+    title: 'Gallery Picture 8',
+    author: 'Food', 
+    },
+    {
+    img: picture9,
+    title: 'Gallery Picture 9',
+    author: 'Fit',  
+    },
+    {
+    img: picture10,
+    title: 'Gallery Picture 10',
+    author: 'Food',  
+    },
+    
   ];
 
 export default function SingleLineGridList() {
