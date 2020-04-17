@@ -99,10 +99,10 @@ const HomePage = () => {
         </div>
       </div>
 
-      {/* Social Media Idea Section (Placeholder) */}
+      {/* Gallery Section */}
 
       <div className="content-section">
-        <h1 styles={{textAlign: 'center'}}>Section For Imah's idea</h1>
+        <h1 styles={{textAlign: 'center'}}>Quotes of the week</h1>
         <GallerySection />
 
       </div>
