@@ -13,9 +13,11 @@ export default function About() {
     Email - info@nourishandlift.com
     Instagram - Nourishandlift
     Twitter - Nourishandlift`
+
+    const hi = 'Hi!'
     return (
 
-        <ReactMarkdown source={input} />  
+        <ReactMarkdown source={hi} />  
         
     );
 }

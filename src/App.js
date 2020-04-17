@@ -3,9 +3,9 @@ import NavMenu from './containers/NavMenu/NavMenu'
 import RecipesAPI from './components/Recipes/RecipesAPI'
 import WorkoutCardGrid from './components/Workout Page/cardsection'
 import RecipeCardGrid from './components/Recipes/recipes-section'
+import AboutSection from './components/About/About'
 import './App.css';
 
-// React Markdown
 
 //Local Images
 import Logo from './assets/logos/logo_white_bg.png'
@@ -112,7 +112,10 @@ const AboutPage = () => {
           <img src="https://files.slack.com/files-pri/TCX5TJ8DD-F0124RKC5Q9/nourish___lift-5.png" alt="cool" />
         </div>
       </div>
-      <p>ABOUT: This is the about page.</p>
+
+      <div className="content">
+        <AboutPage />
+      </div>
     </div>
   )
 }
