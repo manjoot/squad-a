@@ -146,7 +146,7 @@ export default function NavMenu() {
         {/* Recipe */}
 
         <Link 
-        to="/recipes"
+        to="/recipes-section"
         style={{ textDecoration: 'none', color: 'black' }}
         >
           <StyledMenuItem>
