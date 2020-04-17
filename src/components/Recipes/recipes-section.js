@@ -277,18 +277,8 @@ const useStyles = makeStyles((theme) => ({
               <li>100g cherry tomatoes, halved</li>
               
             </ul>}>
-
- 
             </WorkoutCard>
            </Grid>
-
-
-
-
-
-
-
-
           </Grid>
       </div>
   );
