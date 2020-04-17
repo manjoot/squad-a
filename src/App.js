@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
 
 const HomePage = () => {
   const classes = useStyles(); //Material UI grid style declaration
-  
+
   return (
     <div className="content">
       <NavMenu />
@@ -94,6 +94,7 @@ const HomePage = () => {
 
       <div className="content-section">
         <h1 styles={{textAlign: 'center'}}>Quotes of the week</h1>
+        <br />
         <GallerySection />
 
       </div>
