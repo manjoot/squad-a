@@ -1,7 +1,8 @@
 import React from 'react';
 import NavMenu from './containers/NavMenu/NavMenu'
 import RecipesAPI from './components/Recipes/RecipesAPI'
-import CardGrid from './components/Workout Page/cardsection'
+import WorkoutCardGrid from './components/Workout Page/cardsection'
+import RecipeCardGrid from './components/Recipes/recipes-section'
 import './App.css';
 
 //Local Images
@@ -118,13 +119,20 @@ const WorkoutsPage = () => {
   return (
     <div className="content">
       <NavMenu />
+
+      {/* Logo */}
       <div className="content-section welcome">
         <div className="header">
           <img src="https://files.slack.com/files-pri/TCX5TJ8DD-F0124RKC5Q9/nourish___lift-5.png" alt="cool" />
         </div>
       </div>
+
+      {/* Content */}
       <p>WORKOUTS: This is the workouts page.</p>
-      <CardGrid />
+      <div className="content-section">
+        <WorkoutCardGrid />
+      </div>
+
     </div>
   )
 }
@@ -133,13 +141,19 @@ const RecipesPage = () => {
   return (
     <div className="content">
       <NavMenu />
+      {/* Logo */}
       <div className="content-section welcome">
         <div className="header">
           <img src="https://files.slack.com/files-pri/TCX5TJ8DD-F0124RKC5Q9/nourish___lift-5.png" alt="cool" />
         </div>
       </div>
-      <RecipesAPI />
-      <p>RECIPES: This is the recipes page.</p>
+
+      <div className="content-section">
+        <RecipeCardGrid />
+      </div>
+
+      {/* Content */}
+
     </div>
   )
 }
