@@ -1,8 +1,11 @@
 import React from 'react';
 import NavMenu from './containers/NavMenu/NavMenu'
 import RecipesAPI from './components/Recipes/RecipesAPI'
-import CardGrid from './components/Workout Page/cardsection'
+import WorkoutCardGrid from './components/Workout Page/cardsection'
+import RecipeCardGrid from './components/Recipes/recipes-section'
+import AboutSection from './components/About/About'
 import './App.css';
+
 
 //Local Images
 import Logo from './assets/logos/logo_white_bg.png'
@@ -53,7 +56,11 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="content-section">
+      <div className="content-section h2">
+        <p className="homepage-message">Welcome! Are we lifting or eating today?</p>
+      </div>
+
+      <div className="content-section twoimages-container">
         <div className={classes.root}>
           <Grid container spacing={3}>
             <Grid item xs={4}>
@@ -109,7 +116,10 @@ const AboutPage = () => {
           <img src="https://files.slack.com/files-pri/TCX5TJ8DD-F0124RKC5Q9/nourish___lift-5.png" alt="cool" />
         </div>
       </div>
-      <p>ABOUT: This is the about page.</p>
+
+      <div className="content-section">
+        <AboutSection />
+      </div>
     </div>
   )
 }
@@ -118,13 +128,20 @@ const WorkoutsPage = () => {
   return (
     <div className="content">
       <NavMenu />
+
+      {/* Logo */}
       <div className="content-section welcome">
         <div className="header">
           <img src="https://files.slack.com/files-pri/TCX5TJ8DD-F0124RKC5Q9/nourish___lift-5.png" alt="cool" />
         </div>
       </div>
+
+      {/* Content */}
       <p>WORKOUTS: This is the workouts page.</p>
-      <CardGrid />
+      <div className="content-section">
+        <WorkoutCardGrid />
+      </div>
+
     </div>
   )
 }
@@ -133,13 +150,19 @@ const RecipesPage = () => {
   return (
     <div className="content">
       <NavMenu />
+      {/* Logo */}
       <div className="content-section welcome">
         <div className="header">
           <img src="https://files.slack.com/files-pri/TCX5TJ8DD-F0124RKC5Q9/nourish___lift-5.png" alt="cool" />
         </div>
       </div>
-      <RecipesAPI />
-      <p>RECIPES: This is the recipes page.</p>
+
+      <div className="content-section">
+        <RecipeCardGrid />
+      </div>
+
+      {/* Content */}
+
     </div>
   )
 }
