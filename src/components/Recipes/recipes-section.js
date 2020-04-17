@@ -249,11 +249,38 @@ const useStyles = makeStyles((theme) => ({
               
             </ul>}>
 
+ 
             </WorkoutCard>
            </Grid>
 
             
             {/*--------------------1 EXTRA BELOW --------------------------------- */}
+
+            <Grid item xs={12} sm={4}>
+          <WorkoutCard 
+          nameOfExercise="Asian prawn and quinoa salad"
+          dateOfPublishing="Assists in keeping arms Toned!"
+          shortDescription="This fresh salad is 3 of your 5-a-day. With zingy lime and a hit of chilli heat."
+          longDescription=
+          
+            {<ul>
+              <li>60g quinoa</li>
+              
+              <li>150g cooked shelled prawns</li>
+              
+              <li>1 small avocado, stoned and sliced</li>
+              
+              <li>¼ cucumber, halved and sliced</li>
+
+              <liv>50g watercress</liv>
+
+              <li>100g cherry tomatoes, halved</li>
+              
+            </ul>}>
+
+ 
+            </WorkoutCard>
+           </Grid>
 
 
 
