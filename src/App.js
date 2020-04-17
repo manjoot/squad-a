@@ -113,7 +113,7 @@ const AboutPage = () => {
         </div>
       </div>
 
-      <div className="content">
+      <div className="content-section">
         <AboutSection />
       </div>
     </div>
