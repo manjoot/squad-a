@@ -40,15 +40,6 @@ const useStyles = makeStyles((theme) => ({
 const HomePage = () => {
   const classes = useStyles(); //Material UI grid style declaration
 
-  // Handles for Image Clicks
-  // const handleClickWorkout = () => {
-  //   return (
-      
-
-  //   );
-
-
-  // }
   return (
     <div className="content">
       <NavMenu />
@@ -99,10 +90,11 @@ const HomePage = () => {
         </div>
       </div>
 
-      {/* Social Media Idea Section (Placeholder) */}
+      {/* Gallery Section */}
 
       <div className="content-section">
-        <h1 styles={{textAlign: 'center'}}>Section For Imah's idea</h1>
+        <h1 styles={{textAlign: 'center'}}>Quotes of the week</h1>
+        <br />
         <GallerySection />
 
       </div>
@@ -141,8 +133,9 @@ const WorkoutsPage = () => {
       </div>
 
       {/* Content */}
-      <p>WORKOUTS: This is the workouts page.</p>
       <div className="content-section">
+      <h1 styles={{textAlign: 'center'}}>Workouts</h1>
+        <br />
         <WorkoutCardGrid />
       </div>
 
@@ -162,6 +155,8 @@ const RecipesPage = () => {
       </div>
 
       <div className="content-section">
+      <h1 styles={{textAlign: 'center'}}>Recipes</h1>
+        <br />
         <RecipeCardGrid />
       </div>
 

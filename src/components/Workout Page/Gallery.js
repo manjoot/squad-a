@@ -44,52 +44,52 @@ const useStyles = makeStyles((theme) => ({
 const tileData = [
    {
     img: picture1,
-    title: 'Gallery Picture 1',
+    title: 'Action is the foundational key to all success',
     author: 'Fit',
    },
    {
     img: picture2,
-    title: 'Gallery Picture 2',
+    title: 'What hurts today makes you stronger tomorrow.',
     author: 'Food', 
     },
     {
     img: picture3,
-    title: 'Gallery Picture 3',
+    title: 'I have two doctors, my left leg and my right',
     author: 'Fit',  
     },
     {
     img: picture4,
-    title: 'Gallery Picture 4',
+    title: 'Take care of your body. It’s the only place you have to live',
     author: 'Food'  
     },
     {
     img: picture5,
-    title: 'Gallery Picture 5',
+    title: 'A healthy body is a platform for flourishing a healthy mind.',
     author: 'Fit',  
     },
     {
     img: picture6,
-    title: 'Gallery Picture 6',
+    title: 'Health is life energy in abundance.',
     author: 'Food',  
     },
     {
     img: picture7,
-    title: 'Gallery Picture 7',
+    title: 'Remember who youre doing it for.',
     author: 'Fit',  
     },
     {
     img: picture8,
-    title: 'Gallery Picture 8',
+    title: 'Consider the possibilities',
     author: 'Food', 
     },
     {
     img: picture9,
-    title: 'Gallery Picture 9',
+    title: 'Make fitness a habit.',
     author: 'Fit',  
     },
     {
     img: picture10,
-    title: 'Gallery Picture 10',
+    title: 'Attitude is everything.',
     author: 'Food',  
     },
     
@@ -110,11 +110,14 @@ export default function SingleLineGridList() {
                 root: classes.titleBar,
                 title: classes.title,
               }}
-              actionIcon={
-                <IconButton aria-label={`star ${tile.title}`}>
-                  <StarBorderIcon className={classes.title} />
-                </IconButton>
-              }
+
+              // STAR ICON (CURRENTLY NOT IN USE)
+              
+              // actionIcon={
+              //   <IconButton aria-label={`star ${tile.title}`}>
+              //     <StarBorderIcon className={classes.title} />
+              //   </IconButton>
+              // }
             />
           </GridListTile>
         ))}

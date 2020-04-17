@@ -12,12 +12,12 @@
 .image {
   height: 500px;
   margin-top: -200px;
-  padding-left: 180px;
+  padding-left: 215px;
   transition: transform 0.5s;
 }
 
 .image:hover {
-  transform: scale(1.01);
+  transform: scale(1.015);
   cursor: pointer;
 }
 .img1 {
