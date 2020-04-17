@@ -24,135 +24,44 @@ export default function CardGrid(props) {
         <Grid item xs={12} sm={4}>
             <ExerciseAPI
               exID={74}
-            ></ExerciseAPI>
+            >
+
+            </ExerciseAPI>
         </Grid>
         <Grid item xs={12} sm={4}>
-            <WorkoutCard 
-            nameOfExercise="Bye Bye Back Fat"
-            dateOfPublishing="16.03.2020"
-            titleOfExercise="Back"
-            shortDescription="Tackle those stubborn areas and lose back fat fast."
-            longDescription=
-            {<ol>
-            <li>Deadlift (3 sets, 45 seconds)</li>
-            
-            <li>Swimmers (3 sets, 45 seconds)</li>
-            
-            <li>Bent Over Rows (3 sets, 60 seconds)</li>
-            
-            <li>Plank Glute Kickback (3 sets, 60 seconds)</li>
-            
-            <li>Oblique Raises (3 sets, 30 seconds per side)</li>
-            
-            <li>Flutter Kicks (3 sets, 60 seconds)</li>
+            <ExerciseAPI
+              exID={109}
+            >
 
-            <li>Bent Over One Arms (3 sets, 60 seconds)</li>
-
-            <li>Burpees (3 sets, 45 seconds)</li>
-
-            <li>Bent Over Rows (3 sets, 60 seconds)</li>
-
-            <li>Plank (3 sets, 30 seconds per side)</li>
-            </ol>}></WorkoutCard>
+            </ExerciseAPI>
         </Grid>
         <Grid item xs={12} sm={4}>
-            <WorkoutCard 
-            nameOfExercise="Butt and Gut"
-            dateOfPublishing="23.03.2020"
-            titleOfExercise="Mid-Section"
-            shortDescription="Tone the butt and burn the gut with these 6 simple exercises."
-            longDescription=
-            
-            {<ol>
+            <ExerciseAPI
+              exID={81}
+            >
 
-            <li>Plank Kick Backs (20 x 3 sets, 1 minute breaks between sets)</li>
-
-            <li>Bridges (20 x 3 sets, 1 minute breaks between sets)</li>
-
-            <li>Bridge Taps (20 x 3 sets, 1 minute breaks between sets)</li>
-
-            <li>Leg Raises (20 x 3 sets, 1 minute breaks between sets)</li>
-
-            <li>Crunch Kicks (20 x 3 sets, 1 minute breaks between sets)</li>
-
-            <li>Sit-ups (20 x 3 sets, 1 minute breaks between sets)</li>
-            </ol>}></WorkoutCard>
+            </ExerciseAPI>
         </Grid>
         <Grid item xs={12} sm={4}>
-            <WorkoutCard 
-            nameOfExercise="Get Rid - Saddlebags"
-            dateOfPublishing="30.03.2020"
-            titleOfExercise="Mid-Section"
-            shortDescription="Define the area between your thighs and hips for an hourglass figure."
-            longDescription=
-            
-            {<ol>
-            <li>Elbow Plank With Donkey Kick (20 x 3 sets, 1 minute breaks between sets)</li>
+            <ExerciseAPI
+              exID={181}
+            >
 
-            <li>Sumo Squats (20 x 3 sets, 1 minute breaks between sets)</li>
-
-            <li>Static Lunges (20 x 3 sets, 1 minute breaks between sets)</li>
-
-            <li>Squat with Kick (20 x 3 sets, 1 minute breaks between sets)</li>
-
-            <li>Clamshells Band Exercise (20 x 3 sets, 1 minute breaks between sets)</li>
-
-            <li>Side Lunges (20 x 3 sets, 1 minute breaks between sets)</li>
-            </ol>}></WorkoutCard>
+            </ExerciseAPI>
         </Grid>
         <Grid item xs={12} sm={4}>
-            <WorkoutCard 
-            nameOfExercise="Fatty Arms Begone"
-            dateOfPublishing="06.04.2020"
-            titleOfExercise="Arms"
-            shortDescription="Trade in the fat on your arms for arms of steel."
-            longDescription=
-            
-            {<ol>
-            
-            <li>Tricep Dips (20 x 3 sets, 1 minute breaks between sets)</li>
+            <ExerciseAPI
+              exID={86}
+            >
 
-            <li>Bicep Curls (20 x 3 sets, 1 minute breaks between sets)</li>
-
-            <li>Punches (20 x 3 sets, 1 minute breaks between sets)</li>
-
-            <li>Arm Raises (20 x 3 sets, 1 minute breaks between sets)</li>
-
-            <li>Raises Arm Circles (20 x 3 sets, 1 minute breaks between sets)</li>
-
-            <li>Raises Arm Hold (20 seconds x 3 sets, 1 minute breaks between sets)</li>
-            </ol>}></WorkoutCard>
+            </ExerciseAPI>
         </Grid>
         <Grid item xs={12} sm={4}>
-            <WorkoutCard 
-            nameOfExercise="Waist Cinching Exercises"
-            dateOfPublishing="13.04.2020"
-            titleOfExercise="Mid-Section"
-            shortDescription="Target your abs and with these core exercises."
-            longDescription=
-            {<ol>
-           
-           <li>Russian Twist (60 seconds x 3 sets, 1 minute breaks between sets)</li>
-             
-           <li>Reverse Crunches (60 seconds x 3 sets, 1 minute breaks between sets)</li>
+            <ExerciseAPI
+              exID={143}
+            >
 
-           <li>Dead Bug (60 seconds x 3 sets, 1 minute breaks between sets)</li>
-
-           <li>Back Extensions (60 seconds x 3 sets, 1 minute breaks between sets)</li>
-
-           <li>Bicycle Crunches (60 seconds x 3 sets, 1 minute breaks between sets)</li>
-
-           <li>Seated Knee Tucks (60 seconds x 3 sets, 1 minute breaks between sets)</li>
-
-           <li>Alternate Heel Touches (60 seconds x 3 sets, 1 minute breaks between sets)</li>
-
-           <li>Bird Dogs (60 seconds x 3 sets, 1 minute breaks between sets)</li>
-
-           <li>Side Plank (60 seconds x 3 sets, 1 minute breaks between sets)</li>
-
-            </ol>}>
-
-            </WorkoutCard>
+            </ExerciseAPI>
         </Grid>
       </Grid>
     </div>
