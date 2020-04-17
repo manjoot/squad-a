@@ -133,8 +133,9 @@ const WorkoutsPage = () => {
       </div>
 
       {/* Content */}
-      <p>WORKOUTS: This is the workouts page.</p>
       <div className="content-section">
+      <h1 styles={{textAlign: 'center'}}>Workouts</h1>
+        <br />
         <WorkoutCardGrid />
       </div>
 
@@ -154,6 +155,8 @@ const RecipesPage = () => {
       </div>
 
       <div className="content-section">
+      <h1 styles={{textAlign: 'center'}}>Recipes</h1>
+        <br />
         <RecipeCardGrid />
       </div>
 
