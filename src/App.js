@@ -5,6 +5,8 @@ import WorkoutCardGrid from './components/Workout Page/cardsection'
 import RecipeCardGrid from './components/Recipes/recipes-section'
 import './App.css';
 
+// React Markdown
+
 //Local Images
 import Logo from './assets/logos/logo_white_bg.png'
 import WorkoutImage from './assets/images/workout.jpg'
