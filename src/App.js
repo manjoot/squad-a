@@ -56,7 +56,11 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className="content-section">
+      <div className="content-section h2">
+        <p className="homepage-message">Welcome! Are we lifting or eating today?</p>
+      </div>
+
+      <div className="content-section twoimages-container">
         <div className={classes.root}>
           <Grid container spacing={3}>
             <Grid item xs={4}>

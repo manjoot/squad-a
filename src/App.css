@@ -10,9 +10,9 @@
 
 /* Homepage Image Class */
 .image {
-  height: 600px;
+  height: 500px;
   margin-top: -200px;
-  padding-left: 150px;
+  padding-left: 180px;
   transition: transform 0.5s;
 }
 
@@ -59,11 +59,18 @@
   padding-bottom: 0px;
 }
 
-.workout {
- flex: 1;
+.h2 {
+  margin-top: -180px;
 }
 
-.recipe {
-  flex: 2;
+.twoimages-container {
+  margin-top: -100px
 }
 
+/* Headings */
+
+.homepage-message {
+  text-align: center;
+  font-style: italic;
+  font-size: large;
+}
