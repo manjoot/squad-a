@@ -50,22 +50,17 @@ export default function WorkoutCard(props) {
   return (
     <Card className={classes.root}>
       <CardHeader
-        avatar={
-          <Avatar aria-label="Workout" className={classes.avatar}>
-            W
-          </Avatar>
-        }
         action={
           <IconButton aria-label="settings">
             <MoreVertIcon />
           </IconButton>
         }
         title={props.nameOfExercise}
-        subheader={props.dateOfPublishing}
+        subheader={props.exerciseCat}
       />
       <CardMedia
         className={classes.media}
-        image="/static/images/cards/paella.jpg"
+        image={props.exerciseThum}
         title={props.titleOfExercise}
       />
       <CardContent>
