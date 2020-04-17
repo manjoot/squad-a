@@ -41,8 +41,7 @@ const tileData = [
    {
     img: picture1,
     title: 'Gallery Picture 2',
-    author: 'john'
-    
+    author: 'john'  
     },
   ];
 

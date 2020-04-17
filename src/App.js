@@ -2,6 +2,7 @@ import React from 'react';
 import NavMenu from './containers/NavMenu/NavMenu'
 import RecipesAPI from './components/Recipes/RecipesAPI'
 import CardGrid from './components/Workout Page/cardsection'
+import GallerySection from './components/Workout Page/Gallery'
 import './App.css';
 
 //Local Images
@@ -94,6 +95,8 @@ const HomePage = () => {
 
       <div className="content-section">
         <h1 styles={{textAlign: 'center'}}>Section For Imah's idea</h1>
+        <GallerySection />
+
       </div>
 
     </div>
