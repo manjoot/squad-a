@@ -227,36 +227,33 @@ const useStyles = makeStyles((theme) => ({
 
            <Grid item xs={12} sm={4}>
           <WorkoutCard 
-          nameOfExercise="Feta and Kale loaded Sweet Potato"
-          dateOfPublishing="Helps to eliminate a Fatty Back!"
-          shortDescription="Serve up this sweet potato packed with feta, chickpeas and kale for a healthy lunch or dinner. "
+          nameOfExercise="Shredded Wheat Breakfast Bars"
+          dateOfPublishing="Helps to eliminate unwanted side fat!"
+          shortDescription="Whip up a batch of our delicious Shredded Wheat breakfast bars and start your day the tasty way."
           longDescription=
           
             {<ul>
-              <li>2 Sweet Potatoes</li>
+              <li>2	Shredded Wheat Original biscuit (45g), crumbled</li>
               
-              <li>210g can chickpeas, drained</li>
+              <li>20 g	jumbo porridge oats</li>
               
-              <li>1 small red onion, thinly sliced</li>
+              <li>150 g	dried apricots</li>
               
-              <li>2 tbsp red wine vinegar</li>
+              <li>75 g	raisins</li>
 
-              <liv>30g feta, cut into small cubes</liv>
+              <liv>4 tbsp	orange or apple juice</liv>
 
-              <li>1 tbsp extra virgin olive oil</li>
+              <li>25 g	blanched hazelnuts and almonds</li>
 
-              <li>pinch chilli flakes</li>
+              <li>3 tbsp	sunflower seeds</li>
               
-              <li>100g kale</li>
-
-              <liv>1 tbsp pumpkin seeds, toasted</liv>
-
-              <li>80g bag rocket</li>
-
             </ul>}>
 
             </WorkoutCard>
            </Grid>
+
+            
+            {/*--------------------1 EXTRA BELOW --------------------------------- */}
 
 
 
