@@ -2,7 +2,7 @@ import React from "react"
 import axios from "axios"
 import RecipeReviewCard from "./RecipeReviewCard"
 
-function RecipesDay(){
+function RecipesDay(props){
 
     const mealID = props.foodID
     const [mealName, setMealName] = React.useState("")
